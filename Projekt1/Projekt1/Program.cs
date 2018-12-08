@@ -6,8 +6,7 @@ namespace Zadanie1
     {
         static void Main(string[] args)
         {
-            var hello = new SayHello();
-            hello.Say();
+            Say();
 
             Bravo();
         }
@@ -19,11 +18,10 @@ namespace Zadanie1
             Console.WriteLine("Naciśnij jakikolwiek klawisz aby zakończyć...");
             Console.ReadKey();
         }
-    }
 
-    private class SayHello
-    {
-        private void Say()
+
+
+        private static void Say()
         {
             Console.WriteLine("Hello world");
         }
